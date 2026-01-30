@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cognifyz Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Welcome to Cognifyz Interactive Website</h1>
+
+  <img 
+    src="https://media.licdn.com/dms/image/v2/D4D0BAQFOzUIOz1Yb-A/company-logo_200_200/company-logo_200_200/0/1687705347448/cognifyz_techonologies_logo?e=2147483647&v=beta&t=z1VmPnRtVmQGOd44Wyw0THEFdlqWx8kcjg6fQE6eA5g" 
+    alt="Cognifyz Logo" 
+    width="200" 
+  />
+
+  <p>This project demonstrates HTML, CSS, JavaScript, API integration, and form validation.</p>
+
+  <!-- Background Color Button -->
+  <button onclick="changeBackground()">Change Background Color</button>
+
+  <!-- API Data Section -->
+  <h2>Latest Posts</h2>
+  <div id="loading" style="display: none;">Loading...</div>
+  <div id="posts"></div>
+  <button id="showMoreBtn">Show More Posts</button>
+
+  <!-- Contact Form -->
+  <h2>Contact Us</h2>
+  <form id="contactForm" novalidate>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="Write your message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+    <p id="formFeedback"></p>
+  </form>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <script>
+    function changeBackground() {
+      const colors = ['#f0f8ff', '#ffe4e1', '#e6e6fa', '#fafad2', '#d3ffd3', '#f9c2ff'];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+
+</body>
+</html>

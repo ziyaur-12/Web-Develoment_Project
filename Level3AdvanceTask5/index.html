@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Welcome to Cognifyz Interactive Website</h1>
+  <p>This is my first responsive and interactive web page as part of the Level 1 project.</p>
+
+  <h2>About This Project</h2>
+  <p>This webpage demonstrates basic HTML structure, responsive design, and dynamic data loading.</p>
+
+  <!-- Cognifyz Logo -->
+  <img 
+    src="https://media.licdn.com/dms/image/v2/D4D0BAQFOzUIOz1Yb-A/company-logo_200_200/company-logo_200_200/0/1687705347448/cognifyz_techonologies_logo?e=2147483647&v=beta&t=z1VmPnRtVmQGOd44Wyw0THEFdlqWx8kcjg6fQE6eA5g" 
+    alt="Cognifyz Technologies Logo"
+  >
+
+  <!-- Interactive Button -->
+  <button onclick="changeBackground()" style="padding: 10px 20px; font-size: 16px; margin-top: 20px;">
+    Change Background Color
+  </button>
+  <!-- Loading Spinner -->
+<div id="loading" style="display: none; text-align: center;">
+  <p>Loading posts...</p>
+</div>
+
+
+  <!-- 🆕 JSONPlaceholder API Data Section -->
+  <h2>Latest Posts from JSONPlaceholder API</h2>
+  <div id="posts"></div>
+
+  <!-- Script Files -->
+  <script src="script.js"></script>
+  <script>
+    function changeBackground() {
+      const colors = ['#f0f8ff', '#ffe4e1', '#e6e6fa', '#fafad2', '#d3ffd3', '#f9c2ff'];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+
+</body>
+</html>
+<script src="script.js"></script>
+<!-- Show More Button -->
+<div style="text-align: center; margin-top: 20px;">
+  <button id="showMoreBtn" style="padding: 10px 20px; font-size: 16px;">Show More Posts</button>
+</div>
+
+
+

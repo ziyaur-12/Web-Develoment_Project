@@ -1,0 +1,17 @@
+$color: teal;
+
+body {
+  background-color: #eee;
+
+  h1 {
+    color: $color;
+    font-size: 30px;
+  }
+
+  p {
+    color: darkgray;
+    font-size: 18px;
+  }
+}
+
+

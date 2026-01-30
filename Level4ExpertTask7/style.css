@@ -1,0 +1,13 @@
+/* Custom Styles (Minimal, since Bootstrap is used) */
+
+body {
+  transition: background-color 0.5s ease-in-out;
+}
+
+#formFeedback {
+  font-weight: bold;
+}
+
+img {
+  border-radius: 10px;
+}

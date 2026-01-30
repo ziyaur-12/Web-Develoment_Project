@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Welcome to Cognifyz Interactive Website</h1>
+  <p>This is my first responsive and interactive web page as part of the Level 1 project.</p>
+
+  <h2>About This Project</h2>
+  <p>This webpage demonstrates basic HTML structure, including headings, paragraphs, and an image.</p>
+
+  <img 
+    src="https://media.licdn.com/dms/image/v2/D4D0BAQFOzUIOz1Yb-A/company-logo_200_200/company-logo_200_200/0/1687705347448/cognifyz_techonologies_logo?e=2147483647&v=beta&t=z1VmPnRtVmQGOd44Wyw0THEFdlqWx8kcjg6fQE6eA5g" 
+    alt="Cognifyz Technologies Logo"
+  >
+
+  <!-- Interactive Button -->
+  <button onclick="changeBackground()" style="padding: 10px 20px; font-size: 16px; margin-top: 20px;">
+    Change Background Color
+  </button>
+
+  <!-- Script Section -->
+  <script>
+    function changeBackground() {
+      // List of random colors
+      const colors = ['#f0f8ff', '#ffe4e1', '#e6e6fa', '#fafad2', '#d3ffd3', '#f9c2ff'];
+      // Pick a random color from the list
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      // Apply it to the body
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+
+</body>
+</html>
+
